@@ -14,7 +14,8 @@ ul.addEventListener("click", function (event) {
     deleteTasks(id);
     return;
   }
-
+  const li = event.target.closest("li");
+  if (!li) return;
   toggleTasks(id);
 });
 
@@ -24,7 +25,7 @@ function addTask() {
     return;
   }
 
-  tasks.push({ id: Date.now(), text: value, complited: false });
+  tasks.push({ id: Date.now(), text: value, completed: false });
   input.value = "";
   saveTasks();
   renderTasks();

@@ -8,14 +8,15 @@ renderTasks();
 addBtn.addEventListener("click", addTask);
 
 ul.addEventListener("click", function (event) {
+  const li = event.target.closest("li");
+  if (!li) return;
+
   const id = Number(event.target.closest("li").dataset.id);
 
   if (event.target.classList.contains("delete-btn")) {
     deleteTasks(id);
     return;
   }
-  const li = event.target.closest("li");
-  if (!li) return;
   toggleTasks(id);
 });
 
@@ -42,7 +43,6 @@ function deleteTasks(id) {
 }
 
 function toggleTasks(id) {
-  console.log(id);
   const task = tasks.find((task) => task.id === id);
   task.completed = !task.completed;
   saveTasks();

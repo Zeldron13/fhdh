@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='style.css'>
+  <script src="script.js" defer></script>
+  <title>Лендинг</title>
+</head>
+
+<body>
+  <header class="hero">
+    <h1>Учим JavaScript с нуля</h1>
+    <p>Персональные занятия, практика на реальных проектах</p>
+    <button id="openModalBtn" class="cta-btn">Оставить заявку</button>
+  </header>
+
+  <section class='features'>
+    <div class="feature-card">
+      <h3>Гибкий график</h3>
+      <p>Занимайтесь в удобное время, без привязки к расписанию</p>
+    </div>
+    <div class="feature-card">
+      <h3>Практика с первого дня</h3>
+      <p>Никакий сухой теории - сразу код и реальные проекты</p>
+    </div>
+    <div class="feature-card">
+      <h3>Обратная связь</h3>
+      <p>Разбор твоего кода и ответы на вопросы в моменте</p>
+    </div>
+  </section>
+
+  <div id="modalOverlay" class="modal-overlay hidden">
+    <div class="modal">
+      <button id="closeModalBtn" class="closeBtn">&times;</button>
+      <h2>Оставить заявку</h2>
+      <form id="signupForm">
+        <input type="text" id="nameInput" name="name" placeholder="Ваше имя">
+        <span class="error" id="nameError"></span>
+        <input type="email" id="emailInput" name="email" placeholder="Email">
+        <span class="error" id="emailError"></span>
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

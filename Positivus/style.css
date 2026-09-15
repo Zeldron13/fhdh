@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Space Grotesk", Arial, sans-serif;
+  color: #191a23;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Навигация */
+
+.navbar {
+  padding: 20px 0;
+}
+.logo {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #191a23;
+  font-size: 20px;
+}
+.btn {
+  padding: 20px 35px;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}
+.btn-outline {
+  background: transparent;
+  border: 1px solid #191a23;
+  color: #191a23;
+}
+.btn-primary {
+  background: #191a23;
+  color: #f3f3f3;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 60px 24px;
+  flex-wrap: wrap;
+}
+.hero-text {
+  max-width: 505px;
+}
+
+.hero-title {
+  font-weight: 600;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+.hero-content {
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+.hero-img {
+  width: 600px;
+  height: 515px;
+  background: #f3f3f3;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.logos-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 80px;
+  padding: 40px 24px;
+}
+.logos-inner img {
+  height: 48px;
+  width: auto;
+
+  opacity: 0.9;
+}

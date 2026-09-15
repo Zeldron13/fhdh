@@ -14,7 +14,9 @@ body {
 }
 
 .app {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
+  padding: 0 16px;
 }
 
 h1 {
@@ -23,6 +25,7 @@ h1 {
 
 #todoInput {
   flex: 1;
+  min-width: 0;
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
@@ -45,7 +48,6 @@ h1 {
 
 .input-group {
   display: flex;
-  width: 100%;
 }
 
 #taskList {

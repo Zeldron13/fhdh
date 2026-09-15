@@ -46,7 +46,8 @@ body {
 }
 
 .feature-card {
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
   padding: 20px;
   background: #f4f4f4;
   border-radius: 6px;
@@ -74,10 +75,11 @@ body {
 }
 
 .modal {
+  width: 100%;
+  max-width: 320px;
   background: white;
   padding: 30px;
   border-radius: 8px;
-  width: 320px;
   position: relative;
   transform: scale(1);
   transition: transform 0.25s ease;
@@ -118,4 +120,13 @@ body {
 .error {
   color: #e74c3c;
   font-size: 13px;
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 24px;
+  }
+  .hero p {
+    font-size: 14px;
+  }
 }
